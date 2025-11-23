@@ -54,6 +54,10 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+    'http' => [
+    'timeout' => 300,
+],
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
