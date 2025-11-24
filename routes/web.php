@@ -36,6 +36,9 @@ Route::get('/reels/download', [ReelScraperController::class, 'download'])->name(
 
 
 
+Route::get('/auto/multi', [AutoShortController::class, 'multiForm'])->name('auto.multi.form');
+Route::post('/auto/multi', [AutoShortController::class, 'multiGenerate'])->name('auto.multi.generate');
+
 
 Route::get('/auth/youtube', [YouTubeController::class, 'redirect'])->name('youtube.redirect');
 Route::get('/auth/youtube/callback', [YouTubeController::class, 'callback'])->name('youtube.callback');
@@ -48,7 +51,7 @@ Route::post('/upload-to-youtube', [YouTubeController::class, 'uploadResumable'])
 
 Route::get('/youtube/details', [YouTubeController::class, 'channelInfo'])->name('youtube.details');
 
-
+Route::get('/ai/platform', [DashboardController::class, 'platform'])->name('ai.platform');
 
 
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');

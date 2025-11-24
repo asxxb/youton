@@ -90,6 +90,13 @@
         <p>Configure API keys, templates and more.</p>
         <a href="{{ route('settings.index') }}" class="btn">Open Settings</a>
     </div>
+
+
+       <div class="card">
+        <h3>ai video platform</h3>
+        <p>Create a full YouTube Shorts video with AI visuals + audio.</p>
+        <a href="{{ route('ai.platform') }}" class="btn">Start Creating</a>
+    </div>
 </div>
 
 

@@ -18,4 +18,10 @@ class DashboardController extends Controller
 
     return view('dashboard', compact('youtube', 'user'));
     }
+
+
+    public function platform()
+    {
+        return view('ai.platform');
+    }
 }
